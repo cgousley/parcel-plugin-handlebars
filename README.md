@@ -80,14 +80,7 @@ The original plugin has built in support for frontmatter yaml. I edited it to pu
 ```
 #### Source - `example.hbs`
 ```html
----
-title: This is a heading
-desc: this is a paragraph
-names:
-  - bob
-  - jane
-  - mark
----
+
 {{!< mainlayout}}
 
 <h1>{{title}}</h1>
