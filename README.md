@@ -1,6 +1,6 @@
 
 
-# parcel-plugin-handlebars [![npm](https://img.shields.io/npm/v/parcel-plugin-handlebars.svg)](https://www.npmjs.com/package/parcel-plugin-handlebars)
+# parcel-plugin-handlebars-json [![npm](https://img.shields.io/npm/v/parcel-plugin-handlebars.svg)](https://www.npmjs.com/package/parcel-plugin-handlebars)
 
 [【What is Parcel】](https://parceljs.org/)[【What is Handlebars】](http://handlebarsjs.com/)
 
@@ -17,13 +17,13 @@
 Install with [npm](https://www.npmjs.com/):
 
 ```bash
-$ npm install --save parcel-plugin-handlebars
+$ npm install --save parcel-plugin-handlebars-json
 ```
 
 Install with [yarn](https://yarnpkg.com):
 
 ```bash
-$ yarn add parcel-plugin-handlebars
+$ yarn add parcel-plugin-handlebars-json
 ```
 
 The plugin will process any templated handlebars file extensions (.hbs, .handlebars and .html)
@@ -62,9 +62,22 @@ module.exports = {
 
 ## Features
 
-### frontmatter
-The plugin has built in support for frontmatter yaml. Processed yaml data will be passed into the templates before compilation. frontmatter yaml data will preferably be at the top of the template file such as the following example:
+### Reads form JSON
+The original plugin has built in support for frontmatter yaml. I edited it to pull content from JSON files:
 
+#### Source - `content.json`
+```json
+{
+"title": "This is a heading",
+"desc": "this is a paragraph",
+"names": [
+    "bob",
+    "jane",
+    "mark"
+  ]
+}
+
+```
 #### Source - `example.hbs`
 ```html
 ---
