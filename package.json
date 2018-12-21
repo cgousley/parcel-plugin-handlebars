@@ -1,15 +1,31 @@
 {
-  "name": "parcel-plugin-handlebars",
-  "version": "0.4.4",
-  "description": "Parcel plugin to compile handlebars layouts templates.",
-  "main": "index.js",
-  "scripts": {
-    "lint": "eslint -c .eslintrc.js 'lib/**/*.js' 'index.js'"
+  "author": {
+    "name": "Clayton Ousley",
+    "email": "clayton@plus-equals.net"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/TheBlackBolt/parcel-plugin-handlebars.git"
+  "bugs": {
+    "url": "https://github.com/cgousley/parcel-plugin-handlebars-json/issues"
   },
+  "bundleDependencies": false,
+  "dependencies": {
+    "handlebars": "^4.0.11",
+    "handlebars-helpers": "^0.10.0",
+    "handlebars-layouts": "^3.1.4",
+    "handlebars-wax": "^6.1.0",
+    "parcel-bundler": "^1.4.1"
+  },
+  "deprecated": false,
+  "description": "Parcel plugin to compile handlebars layouts templates with JSON files.",
+  "devDependencies": {
+    "babel-eslint": "^8.2.1",
+    "eslint": "^4.15.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-babel": "^4.1.2",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.5.1"
+  },
+  "homepage": "https://github.com/cgousley/parcel-plugin-handlebars-json#readme",
   "keywords": [
     "parcel",
     "plugin",
@@ -19,35 +35,22 @@
     "asset",
     "build"
   ],
-  "author": "Robbie Hernandez <jayrotek@gmail.com>",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/TheBlackBolt/parcel-plugin-handlebars/issues"
-  },
-  "homepage": "https://github.com/TheBlackBolt/parcel-plugin-handlebars#readme",
+  "main": "index.js",
+  "name": "parcel-plugin-handlebars-json",
   "peerDependencies": {
-    "front-matter": "^2.3.0",
     "handlebars": "^4.0.11",
     "handlebars-helpers": "^0.10.0",
     "handlebars-layouts": "^3.1.4",
     "handlebars-wax": "^6.1.0",
     "parcel-bundler": "^1.4.1"
   },
-  "dependencies": {
-    "front-matter": "^2.3.0",
-    "handlebars": "^4.0.11",
-    "handlebars-helpers": "^0.10.0",
-    "handlebars-layouts": "^3.1.4",
-    "handlebars-wax": "^6.1.0",
-    "parcel-bundler": "^1.4.1"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cgousley/parcel-plugin-handlebars-json.git"
   },
-  "devDependencies": {
-    "babel-eslint": "^8.2.1",
-    "eslint": "^4.15.0",
-    "eslint-config-airbnb": "^16.1.0",
-    "eslint-plugin-babel": "^4.1.2",
-    "eslint-plugin-import": "^2.8.0",
-    "eslint-plugin-jsx-a11y": "^6.0.3",
-    "eslint-plugin-react": "^7.5.1"
-  }
+  "scripts": {
+    "lint": "eslint -c .eslintrc.js 'lib/**/*.js' 'index.js'"
+  },
+  "version": "0.0.1"
 }
