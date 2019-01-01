@@ -175,7 +175,7 @@ module.exports = {
     'id-blacklist': 'off', // [.., ..]
     'id-length': 'off',
     'id-match': 'off',
-    'indent': ['warn', 2],
+    'indent': ['warn', 'tab'],
     'jsx-quotes': 'off',
     'key-spacing': ['warn', { beforeColon: false, afterColon: true }],
     'keyword-spacing': ['warn', { before: true, after: true }],
@@ -207,7 +207,6 @@ module.exports = {
     'no-new-object': 'warn',
     'no-plusplus': ['warn', { allowForLoopAfterthoughts: true }],
     'no-restricted-syntax': 'off',
-    'no-tabs': 'warn',
     'no-ternary': 'off',
     'no-trailing-spaces': 'warn',
     'no-underscore-dangle': 'warn',
