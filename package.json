@@ -52,5 +52,5 @@
   "scripts": {
     "lint": "eslint -c .eslintrc.js 'lib/**/*.js' 'index.js'"
   },
-  "version": "0.0.1"
+  "version": "0.0.2"
 }
