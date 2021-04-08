@@ -43,7 +43,7 @@ module.exports = {
   decorators: 'src/markup/decorators',
   helpers: 'src/markup/helpers',
   layouts: 'src/markup/layouts',
-  partials: 'src/markup/partials',
+  partials: 'src/markup/partials'
 };
 ```
 
@@ -57,6 +57,8 @@ module.exports = {
   helpers: 'views/tools',
   layouts: 'views/templates',
   partials: 'views/partials',
+  "precompiled-src": 'src/partials/precompiled',
+	"precompiled-dest": 'src/js/precompiled.js',
 };
 ```
 
